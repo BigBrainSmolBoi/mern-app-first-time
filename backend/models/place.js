@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
@@ -32,8 +32,8 @@ const placeSchema = new Schema({
   creator: {
     type: mongoose.Types.ObjectId,
     required: true,
-    ref: "User",
+    ref: 'User',
   },
 });
 
-module.exports = mongoose.model("Place", placeSchema);
+module.exports = mongoose.model('Place', placeSchema);
